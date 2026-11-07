@@ -4,6 +4,7 @@
   "main": "index.js",
   "dependencies": {
     "expo": "~58.0.23",
+    "expo-dev-client": "~58.0.18",
     "expo-status-bar": "~58.0.4",
     "react": "19.3.0",
     "react-native": "0.88.1"
@@ -13,6 +14,16 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web"
+  },
+  "expo": {
+    "autolinking": {
+      "exclude": [
+        "expo-dev-client",
+        "expo-dev-launcher",
+        "expo-dev-menu",
+        "expo-dev-menu-interface"
+      ]
+    }
   },
   "private": true
 }
