@@ -53,7 +53,7 @@ function main() {
     process.exit(2);
   }
   console.log(
-    `autolinkedModules: ${devClientPlugins.join(', ')} excluded from autolinking, as package.json configures`
+    `autolinkedModules excludes ${devClientPlugins.join(', ')}, as package.json configures`
   );
 
   const pluginHistory = Object.keys(prebuild._internal?.pluginHistory ?? {});
